@@ -1,10 +1,20 @@
-
-body{
+body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -14,11 +24,11 @@ ul {
   list-style: none;
 }
 
-.header{
-  background-color:#000;
+.header {
+  background-color: #000;
 }
 
-.header-container{
+.header-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -31,21 +41,20 @@ ul {
   margin-right: auto;
 }
 
-.header-menu{
+.header-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
 }
 
-.header-menu a{
+.header-menu a {
   color: #fff;
   padding: 16px 0px;
   display: inline-block;
   font-size: 18px;
   position: relative;
-
 }
-.header-menu a::after{
+.header-menu a::after {
   content: "";
   display: block;
   height: 2px;
@@ -54,50 +63,91 @@ ul {
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
-
 }
-.header-menu a:hover::after{
+.header-menu a:hover::after {
   content: "";
   display: block;
   height: 2px;
   width: 100%;
   background: #fff;
   margin-top: 4px;
-
 }
 
-
-@media (max-width:800px){
-
-  .header-menu{
+@media (max-width: 800px) {
+  .header-menu {
     gap: 20px;
   }
-  .header-menu a{
-    background-color: red;
+  .header-menu a {
     padding: 12px;
     padding: 16px;
     border-radius: 4px;
     cursor: pointer;
   }
-  .header-menu a::after{
-   display: none;
+  .header-menu a::after {
+    display: none;
   }
-
-
-  
 }
-@media (max-width:600px){
-
-  .header-menu{
+@media (max-width: 600px) {
+  .header-menu {
     gap: 12px;
   }
-  .header-menu a{
-    background-color: red;
+  .header-menu a {
     padding: 8px;
     padding: 12px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
   }
-  
+}
+
+.introducao-bg {
+  background-color: #000;
+  color: #fff;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 80px;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+  font-size: 64px;
+  line-height: 1.125;
+}
+.introducao h1 span{
+  color: #ffbb00;
+}
+.introducao p {
+  margin-bottom: 20px;
+  font-size: ;
+  line-height: 1.5;
+  color: #eded;
+}
+.introducao .introducao-conteudo a{
+ display: inline-block;
+ padding: 16px 32px;
+ background: linear-gradient(#ffbf00, #f2a50c);
+ border-radius: 4px;
+ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+ text-transform: uppercase;
+ color: #332200;
+ font-size: 18px;
+ line-height: 1.33;
+ font-weight: bolder;
+}
+.introducao .introducao-conteudo a:hover{
+background: linear-gradient(#ffb60d, #e59317);
 }
