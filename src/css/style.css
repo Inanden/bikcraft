@@ -1,153 +1,62 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-img {
-  max-width: 100%;
-  display: block;
-}
 
-h1,
-p {
-  margin: 0;
-}
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import "./global/global.css";
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+@import "./global/header.css";
 
-.header {
-  background-color: #000;
-}
 
-.header-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* UTILIDADES */
+@import "./utilidades/componentes.css";
+@import "./utilidades/tipografia.css";
 
-.header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
+@import "./utilidades/cores.css";
+@import "./utilidades/animacao.css";
 
-.header-menu a {
-  color: #fff;
-  padding: 16px 0px;
-  display: inline-block;
-  font-size: 18px;
-  position: relative;
-}
-.header-menu a::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0px;
-  background: #fff;
-  margin-top: 4px;
-  transition: 0.3s;
-  position: absolute;
-}
-.header-menu a:hover::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 100%;
-  background: #fff;
-  margin-top: 4px;
-}
+@import "./utilidades/formulario.css";
 
-@media (max-width: 800px) {
-  .header-menu {
-    gap: 20px;
-  }
-  .header-menu a {
-    padding: 12px;
-    padding: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .header-menu a::after {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 12px;
-  }
-  .header-menu a {
-    padding: 8px;
-    padding: 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-}
+/* BICICLETAS */
 
-.introducao-bg {
-  background-color: #000;
-  color: #fff;
-}
+@import "./bicicletas/bicicletas-lista.css";
 
-.introducao {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0px 40px;
-  max-width: 1200px;
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
+@import "./bicicletas/bicicletas.css";
 
-.introducao-conteudo {
-  align-self: end;
-  padding-bottom: 80px;
-}
+/* BICICLETA */
+@import "./bicicleta/bicicleta.css";
+@import "./bicicleta/seguro.css";
 
-.introducao h1 {
-  margin-bottom: 32px;
-  font-size: 64px;
-  line-height: 1.125;
-}
-.introducao h1 span{
-  color: #ffbb00;
-}
-.introducao p {
-  margin-bottom: 20px;
-  font-size: ;
-  line-height: 1.5;
-  color: #eded;
-}
-.introducao .introducao-conteudo a{
- display: inline-block;
- padding: 16px 32px;
- background: linear-gradient(#ffbf00, #f2a50c);
- border-radius: 4px;
- box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
- text-transform: uppercase;
- color: #332200;
- font-size: 18px;
- line-height: 1.33;
- font-weight: bolder;
-}
-.introducao .introducao-conteudo a:hover{
-background: linear-gradient(#ffb60d, #e59317);
-}
+/* HOME */
+@import "./home/introducao.css";
+@import "./home/tecnologia.css";
+
+@import "./home/parceiros.css";
+
+@import "./home/depoimento.css";
+
+/* SEGGUROS */
+
+@import "./seguros/seguros.css";
+
+@import "./seguros/vantagens.css";
+
+@import "./seguros/perguntas.css";
+
+
+/* CONTATOS */
+@import "./contato/contato.css";
+
+@import "./contato/lojas.css";
+
+
+/* FOOTER */
+@import "./global/footer.css";
+
+/* TERMOS */
+@import "./termos/termos.css";
+
+/* ORÇAMENTO */
+@import "./orcamento/orcamento.css";
+
+
+
+
